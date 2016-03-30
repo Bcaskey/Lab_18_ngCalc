@@ -11,10 +11,11 @@ controllers.controller('welcomeController', ['$scope', function($scope) {
             var opt1 = parseInt($scope.num1, 10);
             var opt2 = parseInt($scope.num2, 10);
             var total = (opt1 + opt2);
+            $scope.task = 'adding';
             $scope.opt1 = opt1;
             $scope.opt2 = opt2;
             $scope.total = total;
-            $scope.showMeAdd=true;            
+            $scope.showMeResult=true;            
         }
         $scope.num1 = null;
         $scope.num2 = null;
@@ -26,10 +27,11 @@ controllers.controller('welcomeController', ['$scope', function($scope) {
             var opt1 = parseInt($scope.num1, 10);
             var opt2 = parseInt($scope.num2, 10);
             var total = (opt1 - opt2);
+            $scope.task = 'subtracting';
             $scope.opt1 = opt1;
             $scope.opt2 = opt2;
             $scope.total = total;
-            $scope.showMeAdd=true;            
+            $scope.showMeResult=true;            
         }
         $scope.num1 = null;
         $scope.num2 = null;
@@ -40,11 +42,12 @@ controllers.controller('welcomeController', ['$scope', function($scope) {
         } else {
             var opt1 = parseInt($scope.num1, 10);
             var opt2 = parseInt($scope.num2, 10);
-            var total = (opt1 * opt2);
+            var total = (opt1 * opt2);            
+            $scope.task = 'multiplying';
             $scope.opt1 = opt1;
             $scope.opt2 = opt2;
             $scope.total = total;
-            $scope.showMeAdd=true;            
+            $scope.showMeResult=true;            
         }
         $scope.num1 = null;
         $scope.num2 = null;
@@ -60,10 +63,11 @@ controllers.controller('welcomeController', ['$scope', function($scope) {
             var opt1 = parseInt($scope.num1, 10);
             var opt2 = parseInt($scope.num2, 10);
             var total = (opt1 / opt2);
+            $scope.task = 'dividing';
             $scope.opt1 = opt1;
             $scope.opt2 = opt2;
             $scope.total = total;
-            $scope.showMeAdd=true;            
+            $scope.showMeResult=true;            
         }
         $scope.num1 = null;
         $scope.num2 = null;

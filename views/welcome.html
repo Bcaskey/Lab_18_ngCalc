@@ -6,18 +6,8 @@
     
     <h1>My Calculator</h1>
     <p>
-        
-        <div ng-show="showMeAdd">
-            <h3>The result of adding {{opt1}} and {{opt2}} is {{total}}.</h3>
-        </div>
-        <div ng-show="showMeSubtract">
-            <h3>The result of subtracting {{opt1}} and {{opt2}} is {{total}}.</h3>
-        </div>
-        <div ng-show="showMeMultiply">
-            <h3>The result of multiplying {{opt1}} and {{opt2}} is {{total}}.</h3>
-        </div>
-        <div ng-show="showMeDivide">
-            <h3>The result of dividing {{opt1}} and {{opt2}} is {{total}}.</h3>
+        <div ng-show="showMeResult">
+            <h3>The result of {{task}} {{opt1}} and {{opt2}} is {{total}}.</h3>
         </div>
     </p>  
     <form name="myForm" class="css-form" novalidate>
