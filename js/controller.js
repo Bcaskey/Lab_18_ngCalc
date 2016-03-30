@@ -1,11 +1,9 @@
 var controllers = angular.module('myApp.controllers', []);
 
 controllers.controller('welcomeController', ['$scope', function($scope) {
-    // var opt1 = ('num1').value;
-    // var opt2 = ('num2').value;
+    
     $scope.num1;
     $scope.num2;
-    
     $scope.add = function(){
         if ($scope.num1 == null || $scope.num2 == null) {
             alert('Both Operands must be used');
@@ -71,15 +69,6 @@ controllers.controller('welcomeController', ['$scope', function($scope) {
         $scope.num2 = null;
     };
     
-    
-    
-    // $scope.reset = function() {
-    //     console.log('test');
-    //     $scope.num1 = null;
-    //     $scope.num2 = null;
-    // };
-    // $scope.reset();
-
 }]);
 
 

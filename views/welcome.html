@@ -5,12 +5,7 @@
 <div ng-controller="welcomeController">
     
     <h1>My Calculator</h1>
-        <!--<form name="myForm">
-            <input ng-model="num1" id="opt1">
-            <input ng-model="num2" id="opt2"> 
-        </form>-->
-        <p></p>
-        
+    <p>
         
         <div ng-show="showMeAdd">
             <h3>The result of adding {{opt1}} and {{opt2}} is {{total}}.</h3>
@@ -24,41 +19,19 @@
         <div ng-show="showMeDivide">
             <h3>The result of dividing {{opt1}} and {{opt2}} is {{total}}.</h3>
         </div>
+    </p>  
+    <form name="myForm" class="css-form" novalidate>
+        Operand 1:
+        <input type="text" ng-model="num1" name="num1">
+        <br />
         
-  <form name="myForm" class="css-form" novalidate>
-    Operand 1:
-    <input type="text" ng-model="num1" name="num1">
-    <br />
-    <!--<div ng-show="myForm.num1.$pristine && myForm.$submitted">
-      <div ng-show="form.num1.$error.required">Please enter Operand 1.</div>
-    </div>-->
-
-    Operand 2:
-    <input type="text" ng-model="num2" name="num2">
-    <br />
-    <!--<div ng-show="form.$submitted || form.num2.$touched">
-      <span ng-show="form.num2.$error.required">Please enter Operand 2.</span>
-    </div>-->
-
-    <!--<br />
-    <input type="checkbox" ng-model="user.agree" name="userAgree" required="" />-->
-
-    <!--I agree:
-    <input ng-show="user.agree" type="text" ng-model="user.agreeSign" required="" />
-    <br />
-    <div ng-show="form.$submitted || form.userAgree.$touched">
-      <div ng-show="!user.agree || !user.agreeSign">Please agree and sign.</div>
-    </div>-->
-
-        <!--<input type="button" ng-click="reset()" value="Reset">-->
-  
-  
+        Operand 2:
+        <input type="text" ng-model="num2" name="num2">
+        <br />
+        
         <input type="button" ng-click="add()" value=" + ">
         <input type="button" ng-click="subtract()" value=" - ">
         <input type="button" ng-click="multiply()" value=" * ">
         <input type="button" ng-click="divide()" value=" / ">
-    </form>
-        <!--<button ng-click="add()"> + </button>
-        <button ng-click="subtract()"> - </button>
-        <button ng-click="multiply()"> * </button>
-        <button ng-click="divide()"> / </button>-->
+        </form>
+        
